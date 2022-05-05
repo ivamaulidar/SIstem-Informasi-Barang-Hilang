@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url("../img/login.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
+
+.container .forms{
+    padding: 20px;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.forms .input-field{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2 ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: black;
+}
+
+.forms .button{
+    margin-top: 25px;
+}
+
+.forms .button input{
+    border:none;
+    background: #1F1B1B;
+    color:#fff;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.button input:hover{
+    background-color: black;
+}
+
+.forms a{
+    text-decoration: none;
+}
+
+.forms a:hover{
+    text-decoration: underline;
+}
+.forms .text{
+    color: gray;
+}
+
+.forms a.signup-text{
+    color: black;
+}
+
+.forms .login-singup{
+    margin-top: 30px;
+    text-align: center;
+}
