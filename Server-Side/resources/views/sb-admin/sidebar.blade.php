@@ -12,25 +12,22 @@
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="/dashboard-admin">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
-    </li>
-
     <!-- Divider -->
     <hr class="sidebar-divider">
 
     {{-- Navbar --}}
     <li class="nav-item">
-        <a class="nav-link" href="/kehilangan-admin">
+        <a class="nav-link" href="/kehilangan">
             <i class="fas fa-fw fa-folder"></i>
             <span>Kehilangan Barang</span></a>
-        <a class="nav-link" href="/penemuan-admin">
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/penemuan">
             <i class="fas fa-fw fa-folder"></i>
             <span>Penemuan Barang</span></a>
-        <a class="nav-link" href="/pengguna-admin">
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/pengguna">
             <i class="fas fa-fw fa-users"></i>
             <span>Pengguna</span></a>
     </li>

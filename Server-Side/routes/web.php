@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KehilanganController;
+use App\Http\Controllers\PenemuanController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +17,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Route::get('/', function () {
-//     return view('v_home');
-// });
-
-Route::get('/login1', function () {
-    return view('login1');
+Route::get('/home', function () {
+    return view('v_home');
 });
+
+// Route::get('/login1', function () {
+//     return view('login1');
+// });
 
 Route::get('/registrasi', function () {
     return view('registrasi');
@@ -30,22 +33,17 @@ Route::get('/admin', function () {
     return view('sb-admin/app');
 });
 
-Route::get('/dashboard-admin', function () {
-    return view('admin/dashboard');
+Route::get('/daftar_kehilangan', function () {
+    return view('v_daftar_hilang');
 });
 
-Route::get('/kehilangan-admin', function () {
-    return view('admin/kehilangan');
-});
-
-Route::get('/penemuan-admin', function () {
-    return view('admin/penemuan');
-});
-
-Route::get('/pengguna-admin', function () {
-    return view('admin/pengguna');
+Route::get('/daftar_penemuan', function () {
+    return view('v_daftar_ketemu');
 });
 
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('v_home');
+Route::resource('kehilangan', KehilanganController::class);
+Route::resource('penemuan', PenemuanController::class);
+Route::resource('pengguna', UserController::class);
