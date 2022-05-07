@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
 
 *{
     margin: 0;
@@ -8,18 +8,108 @@
 }
 
 body{
+    background: #F3EFEF;
+}
+
+.navbar{
+    margin: 0 auto;
+}
+
+nav{
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     display: flex;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-    background: #E5E5E5;
-    padding: 10px;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+
+.logo{
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: auto;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    background: #fff;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration:  none;
+    color: black;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul li a ion-icon{
+    padding-left: 5px;
+ }
+
+nav ul ul{
+    position: absolute;
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+button {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: transparent;
+}
+
+button .icon{
+    color: red;
+    padding-right: 10px;
+}
+
+button .text:hover{
+    text-decoration: underline;
+}
+
+.content{
+    max-width: 650px;
+    margin: 60px 100px;   
+}
+
+.content .info h2{
+    font-weight: bold;
+    color: #FFF858;
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;  
+}
+
+.content .info p{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 40px;
 }
 
 .container{
-    max-width: 700px;
-    width: 100%;
-    background: #fff;
+    margin: 100px auto;
+    width: 750px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 8px 10px #888888;
     padding: 25px 30px;
