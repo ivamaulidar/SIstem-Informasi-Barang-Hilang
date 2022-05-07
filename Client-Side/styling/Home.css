@@ -50,6 +50,10 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+nav ul li a ion-icon{
+    padding-left: 5px;
+ }
+
 nav ul ul{
     position: absolute;
     display: none;
