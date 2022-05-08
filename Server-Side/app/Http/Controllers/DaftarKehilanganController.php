@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\Kehilangan;
 
-class UserController extends Controller
+class DaftarKehilanganController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +19,8 @@ class UserController extends Controller
     public function index()
     {
         //Tampil Data
-        $datas['users'] = User::all();
-        return view('users.index', $datas);
+        $datas['kehilangan'] = Kehilangan::all();
+        return view('daftar-hilang.index', $datas);
     }
 
     /**
@@ -37,7 +41,29 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Simpan Data
+        $request->validate([
+            
+        ]);
+
+        $file=$request->file('gambar');
+        $file->move(base_path('public/asset/img'), $file->getClientOriginalName());
+
+        $datas = [
+            'nama' => $request->nama,
+            'nim' => $request->nim,
+            'prodi' => $request->prodi,
+            'angkatan' => $request->angkatan,
+            'tanggal' => $request->tanggal,
+            'jenis' => $request->jenis,
+            'spek' => $request->spek,
+            'kronologi' => $request->kronologi,
+            'gambar' => $file->getClientOriginalName(),
+        ];
+
+        Kehilangan::create($datas);
+
+        return redirect('/form_kehilangan');
     }
 
     /**

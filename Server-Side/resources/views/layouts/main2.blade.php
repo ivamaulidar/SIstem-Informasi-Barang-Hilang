@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="vendor/sb-admin/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="vendor/sb-admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/logo.svg">
 
     <title>@yield('title')</title>
   </head>

@@ -47,13 +47,13 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="kronologi">Kronologi</label>
-                        <textarea name="kronologi" value="{{ old('kronologi', $penemuan->kronologi) }}" class="form-control" cols="20" rows="5" required></textarea>
+                        <input name="kronologi" value="{{ old('kronologi', $penemuan->kronologi) }}" class="form-control" required>
                         {{-- <input name="kronologi" value="{{ old('kronologi') }}" class="form-control" required> --}}
                         
                     </div>
                     <div class="form-group mb-3">
                         <label for="gambar">Gambar</label>
-                        <input type="file" name="gambar" class="form-control" required>
+                        <input type="file" name="gambar" class="form-control">
                     </div>
                     <div class="form-group d-flex justify-content">
                         <button type="submit" class="btn btn-success my-2" >Submit</button>

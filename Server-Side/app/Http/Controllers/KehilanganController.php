@@ -9,10 +9,6 @@ use function Ramsey\Uuid\v1;
 
 class KehilanganController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *

@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\Penemuan;
 
-class UserController extends Controller
+class DaftarPenemuanController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +19,8 @@ class UserController extends Controller
     public function index()
     {
         //Tampil Data
-        $datas['users'] = User::all();
-        return view('users.index', $datas);
+        $datas['penemuan'] = Penemuan::all();
+        return view('daftar-ketemu.index', $datas);
     }
 
     /**
@@ -37,7 +41,29 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Simpan Data
+        $request->validate([
+            
+        ]);
+
+        $file=$request->file('gambar');
+        $file->move(base_path('public/asset/img2'), $file->getClientOriginalName());
+
+        $datas = [
+            'nama' => $request->nama,
+            'nim' => $request->nim,
+            'prodi' => $request->prodi,
+            'angkatan' => $request->angkatan,
+            'tanggal_ketemu' => $request->tanggal_ketemu,
+            'jenis' => $request->jenis,
+            'spek' => $request->spek,
+            'kronologi' => $request->kronologi,
+            'gambar' => $file->getClientOriginalName(),
+        ];
+
+        Penemuan::create($datas);
+
+        return redirect('/form_penemuan');
     }
 
     /**

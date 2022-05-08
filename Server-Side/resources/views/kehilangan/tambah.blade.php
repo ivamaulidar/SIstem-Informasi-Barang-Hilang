@@ -47,7 +47,7 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="kronologi">Kronologi</label>
-                        <textarea name="kronologi" value="{{ old('kronologi') }}" class="form-control" cols="20" rows="5" required></textarea>
+                        <input type="text" name="kronologi" value="{{ old('kronologi') }}" class="form-control" required>
                         {{-- <input name="kronologi" value="{{ old('kronologi') }}" class="form-control" required> --}}
                         
                     </div>

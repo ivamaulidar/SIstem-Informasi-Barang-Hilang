@@ -10,6 +10,7 @@
                 <th>No</th>
                 <th>Nama</th>
                 <th>Email</th>
+                <th>Admin</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
                     <td>{{ $increment++ }}</td>
                     <td>{{ $item->name }}</td>
                     <td>{{ $item->email }}</td>
+                    <td>{{ $item->is_admin }}</td>
                 </tr>
             @endforeach
         </tbody>

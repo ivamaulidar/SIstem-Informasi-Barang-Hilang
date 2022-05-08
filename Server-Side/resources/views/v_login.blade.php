@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-widht, initial-scale=1">
         <link rel="stylesheet" href="css/login.css">
+        <link rel="shortcut icon" href="img/logo.svg">
     </head>
     <body>
         <div class="container">

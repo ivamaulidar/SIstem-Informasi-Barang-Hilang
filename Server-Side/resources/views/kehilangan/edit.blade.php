@@ -11,6 +11,7 @@
             <div class="card-body">
                 <form action="{{ route('kehilangan.update', $kehilangan->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('put')
                     <div class="form-group mb-3">
                         <label for="nama">Nama</label>
                         <input type="text" name="nama" value="{{ old('nama', $kehilangan->nama) }}" class="form-control" required>
@@ -47,13 +48,13 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="kronologi">Kronologi</label>
-                        <textarea name="kronologi" value="{{ old('kronologi', $kehilangan->kronologi) }}" class="form-control" cols="20" rows="5" required></textarea>
+                        <input type="text" name="kronologi" value="{{ old('kronologi', $kehilangan->kronologi) }}" class="form-control" required>
                         {{-- <input name="kronologi" value="{{ old('kronologi') }}" class="form-control" required> --}}
                         
                     </div>
                     <div class="form-group mb-3">
                         <label for="gambar">Gambar</label>
-                        <input type="file" name="gambar" class="form-control" required>
+                        <input type="file" name="gambar" class="form-control">
                     </div>
                     <div class="form-group d-flex justify-content">
                         <button type="submit" class="btn btn-success my-2" >Submit</button>
