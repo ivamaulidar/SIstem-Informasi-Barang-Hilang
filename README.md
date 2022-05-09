@@ -18,7 +18,3 @@ https://www.figma.com/file/M3kBDBAhKM0hqErwAOYJ8V/SILABIL?node-id=0%3A1
 
 Link Github :
 https://github.com/mhfqh14/Tubes-PWL
-
-
-
-
