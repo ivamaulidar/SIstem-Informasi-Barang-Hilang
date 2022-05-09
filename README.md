@@ -16,5 +16,8 @@ Deskripsi : Sebuah sistem informasi yang berfungsi untuk membantu mempermudah ci
 Link Figma :
 https://www.figma.com/file/M3kBDBAhKM0hqErwAOYJ8V/SILABIL?node-id=0%3A1
 
-Link Github :
+Link Github (client):
 https://github.com/mhfqh14/Tubes-PWL
+
+Link Github (server):
+https://github.com/GilangRizkyRamadhan119140081/Tubes-PWL-ServerSide
