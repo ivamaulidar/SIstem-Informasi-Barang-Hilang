@@ -30,3 +30,8 @@ Sumber Kode : <br>
 -https://www.youtube.com/watch?v=A7G-kAyfxqY&t=374s <br>
 -https://www.youtube.com/watch?v=zPcvAwp71uA&t=108s <br>
 -https://www.youtube.com/watch?v=960mgtEarfs&t=398s
+
+![Tampilan Sistem SILABIL]([URL_GAMBAR](https://github.com/ivamaulidar/SIstem-Informasi-Barang-Hilang/blob/main/Dokumentasi/1.png))
+![Tampilan Sistem SILABIL]([URL_GAMBAR](https://github.com/ivamaulidar/SIstem-Informasi-Barang-Hilang/blob/main/Dokumentasi/2.png))
+![Tampilan Sistem SILABIL]([URL_GAMBAR](https://github.com/ivamaulidar/SIstem-Informasi-Barang-Hilang/blob/main/Dokumentasi/3.png))
+
